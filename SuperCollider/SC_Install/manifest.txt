@@ -1,4 +1,3 @@
 6550a3548eaf91653d7ad2c7d4e1cb2f1618d83a  SC_Install/sc/sc.zip
 a054cc385699a130376ff0a7fd7c79861e742796  SC_Install/deploy.sh
 e9edaa1a9a3c864d3add5b95c92e16a0ca2e15fe  SC_Install/pkgs/readline-7.0.003-1-armv7h.pkg.tar.xz
-e8fd57a2ebc9d9b7b5eff2dc756363caf127a54f  SC_Install/pkgs/unzip-6.0-12-armv7h.pkg.tar.xz
