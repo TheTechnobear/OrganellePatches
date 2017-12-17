@@ -8,7 +8,7 @@ WORK_DIR=${WORK_DIR:="${USER_DIR}"}
 
 cd $WORK_DIR
 
-MEC_APP=mec-app
+MEC_APP=./mec-app
 
 # encoder wheel is ignored (until /gohome is called at end of script)
 oscsend localhost 4001 /enableauxsub i 1
