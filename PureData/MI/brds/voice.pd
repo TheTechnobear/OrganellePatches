@@ -44,7 +44,6 @@
 #X obj 1001 151 r f_release;
 #X obj 568 113 stripnote;
 #X obj 585 175 / 127;
-#X obj 740 294 print;
 #X obj 768 352 *~;
 #X obj 517 378 *~;
 #X connect 0 0 9 0;
@@ -55,7 +54,7 @@
 #X connect 4 0 6 1;
 #X connect 4 0 6 0;
 #X connect 5 0 0 1;
-#X connect 6 0 47 0;
+#X connect 6 0 46 0;
 #X connect 7 0 17 1;
 #X connect 8 0 2 0;
 #X connect 8 0 43 0;
@@ -77,7 +76,7 @@
 #X connect 25 0 26 0;
 #X connect 26 0 27 0;
 #X connect 27 0 3 0;
-#X connect 28 0 46 1;
+#X connect 28 0 45 1;
 #X connect 29 0 28 0;
 #X connect 30 0 31 0;
 #X connect 31 0 14 0;
@@ -87,14 +86,13 @@
 #X connect 35 0 4 5;
 #X connect 36 0 13 0;
 #X connect 37 0 12 0;
-#X connect 38 0 46 0;
+#X connect 38 0 45 0;
 #X connect 39 0 38 2;
 #X connect 40 0 38 3;
 #X connect 41 0 38 4;
 #X connect 42 0 38 5;
 #X connect 43 0 10 0;
 #X connect 43 1 44 0;
-#X connect 43 1 45 0;
-#X connect 44 0 47 1;
-#X connect 46 0 18 0;
-#X connect 47 0 1 1;
+#X connect 44 0 46 1;
+#X connect 45 0 18 0;
+#X connect 46 0 1 1;
