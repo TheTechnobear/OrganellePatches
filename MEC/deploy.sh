@@ -12,7 +12,9 @@ oscsend localhost 4001 /oled/aux/line/2 3 "into Extras"
 INSTALL_DIR=$USER_DIR/System/MEC
 
 mkdir -p $USER_DIR/System
-cp -R MEC $INSTALL_DIR
+rm -rf $INSTALL_DIR
+mv MEC $INSTALL_DIR
+chmod a+x $INSTALL_DIR/mec-app
 chmod a+x $INSTALL_DIR/*.so
 chmod a+x $INSTALL_DIR/*.pd_linux
 
