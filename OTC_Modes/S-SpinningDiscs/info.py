@@ -1,0 +1,7 @@
+name = "S-Spinning Discs"
+description = "Spin images in Images"
+knob1 = "Speed"
+knob2 = "Image"
+knob3 = "Colour Idx"
+knob4 = "Colour"
+released = "N/A"
