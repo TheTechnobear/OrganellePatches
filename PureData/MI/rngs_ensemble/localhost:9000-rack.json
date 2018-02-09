@@ -1,0 +1,15 @@
+{
+	"ensemble":	{
+		"module":	"rngs_ensemble",
+		"presets":	{
+			"Default":	{
+				"rc_depth":	100,
+				"rc_amount":	100
+			}
+		},
+		"midi-mapping":	{
+			"cc":	{
+			}
+		}
+	}
+}

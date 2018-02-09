@@ -1,0 +1,32 @@
+{
+	"warps":	{
+		"module":	"wrps",
+		"presets":	{
+			"Default":	{
+				"w_drive2":	68.914955,
+				"r_cutoff":	11.827957,
+				"w_gate":	0,
+				"r_time":	22.482893,
+				"e_attack":	52.785927,
+				"b_mix":	47.800587,
+				"w_timbre":	44.672531,
+				"w_drive1":	39.002930,
+				"e_decay":	582.600159,
+				"w_algo":	31.769306,
+				"o_shape":	16,
+				"o_timbre":	56.207233,
+				"o_colour":	58.064514,
+				"r_diff":	37.047897,
+				"o_transpose":	0,
+				"r_amt":	53.665691,
+				"w_shape":	62.658848,
+				"e_sustain":	36.656891,
+				"e_release":	649.071350
+			}
+		},
+		"midi-mapping":	{
+			"cc":	{
+			}
+		}
+	}
+}

@@ -1,0 +1,17 @@
+{
+	"reverb":	{
+		"module":	"rngs_reverb",
+		"presets":	{
+			"Default":	{
+				"r_cutoff":	65.884659,
+				"r_diff":	25.610947,
+				"r_time":	18.377321,
+				"r_amount":	35.092865
+			}
+		},
+		"midi-mapping":	{
+			"cc":	{
+			}
+		}
+	}
+}

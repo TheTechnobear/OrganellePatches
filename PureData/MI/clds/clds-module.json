@@ -26,7 +26,7 @@
         ["pg_main","Main",["clds_mix","clds_freeze","clds_trig","clds_position"]],
         ["pg_texture","Texture", ["clds_size","clds_pitch","clds_density","clds_texture"]],
         ["pg_reverb","Reverb", ["clds_spread","clds_feedback","clds_reverb","clds_mode"]],
-        ["pg_extra","Extra", ["clds_bypass","clds_silence","clds_mono","clds_lofi"]]
+        ["pg_extra","Extra", ["clds_bypass","clds_silence"]]
     ]
 }
 

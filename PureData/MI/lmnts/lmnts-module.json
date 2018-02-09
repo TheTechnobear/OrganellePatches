@@ -27,7 +27,7 @@
         ["pitch","l_modpitch","Mod Pitch",-24,24,0],
         ["pct","l_moddepth","Mod Depth",0,100,0],
 
-        ["bool","l_bypass","E.Amount",0,1,0],
+        ["bool","l_bypass","Bypass",0,1,0],
         ["bool","l_easter_egg","Easter Egg",0,1,0],
         ["int","l_seed","Seed",0,32768,1]
     ],
@@ -37,7 +37,7 @@
         ["pg_blow","Blow", ["l_blow_level","l_blow_timbre","l_blow_flow"]],
         ["pg_strike","Strike", ["l_strike_level","l_strike_timbre","l_strike_mallet"]],
         ["pg_reson","Resonator",["l_space","l_geometry","l_brightness","l_damping"]],
-        ["pg_extra","Extra",["l_position","l_resonator","l_modpitch","l_moddepth"]],
+        ["pg_extra","Extra",["l_position","l_modpitch","l_moddepth"]],
         ["pg_extra2","Extra2",["l_bypass","l_easter_egg","l_seed"]]
     ]
 }

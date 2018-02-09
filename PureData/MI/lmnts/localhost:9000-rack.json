@@ -1,0 +1,34 @@
+{
+	"elements":	{
+		"module":	"lmnts",
+		"presets":	{
+			"Default":	{
+				"l_easter_egg":	0,
+				"l_bypass":	0,
+				"l_moddepth":	0,
+				"l_space":	44.086021,
+				"l_bow_timbre":	70.576736,
+				"l_bow_level":	86.217010,
+				"l_modpitch":	0,
+				"l_contour":	37,
+				"l_position":	62.756599,
+				"l_brightness":	83.479958,
+				"l_strike_timbre":	54.154449,
+				"l_seed":	1,
+				"l_blow_level":	61.388077,
+				"l_blow_timbre":	74.975563,
+				"l_resonator":	0,
+				"l_damping":	45.552299,
+				"l_strike_level":	98.338226,
+				"l_geometry":	20.918865,
+				"l_pitch":	0,
+				"l_strike_mallet":	100,
+				"l_blow_flow":	40.957966
+			}
+		},
+		"midi-mapping":	{
+			"cc":	{
+			}
+		}
+	}
+}
