@@ -1,4 +1,4 @@
-#N canvas 865 306 627 498 10;
+#N canvas 865 306 818 545 10;
 #X obj 67 336 throw~ outL;
 #X obj 167 336 throw~ outR;
 #X obj 68 137 r~ inL;
@@ -42,7 +42,11 @@
 #X connect 13 0 14 0;
 #X connect 14 0 15 0;
 #X restore 87 13 pd rack;
-#X obj 86 50 KontrolModule ensemble rngs_ensemble;
+#X obj 380 351 KontrolModule ensemble rngs_ensemble;
+#X obj 517 160 loadbang;
+#X obj 507 239 t b b;
+#X msg 367 280 loadpreset Default;
+#X msg 517 280 loadsettings localhost:9000;
 #X connect 2 0 8 0;
 #X connect 3 0 8 1;
 #X connect 4 0 5 0;
@@ -51,3 +55,8 @@
 #X connect 7 0 6 0;
 #X connect 8 0 0 0;
 #X connect 8 1 1 0;
+#X connect 11 0 12 0;
+#X connect 12 0 13 0;
+#X connect 12 1 14 0;
+#X connect 13 0 10 0;
+#X connect 14 0 10 0;

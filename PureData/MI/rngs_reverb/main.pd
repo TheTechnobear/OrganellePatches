@@ -49,7 +49,11 @@
 #X connect 13 0 14 0;
 #X connect 14 0 15 0;
 #X restore 83 16 pd rack;
-#X obj 83 48 KontrolModule reverb rngs_reverb;
+#X obj 457 452 KontrolModule reverb rngs_reverb;
+#X obj 560 260 loadbang;
+#X obj 550 339 t b b;
+#X msg 410 380 loadpreset Default;
+#X msg 560 380 loadsettings localhost:9000;
 #X connect 2 0 4 0;
 #X connect 3 0 4 1;
 #X connect 4 0 0 0;
@@ -65,3 +69,8 @@
 #X connect 13 0 8 0;
 #X connect 14 0 10 0;
 #X connect 15 0 11 0;
+#X connect 18 0 19 0;
+#X connect 19 0 20 0;
+#X connect 19 1 21 0;
+#X connect 20 0 17 0;
+#X connect 21 0 17 0;

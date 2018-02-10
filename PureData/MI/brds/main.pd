@@ -91,6 +91,10 @@
 #X obj 339 335 voice;
 #X obj 391 335 voice;
 #X obj 678 623 KontrolModule braids brds;
+#X obj 880 390 loadbang;
+#X obj 870 469 t b b;
+#X msg 730 510 loadpreset Default;
+#X msg 880 510 loadsettings localhost:9000;
 #X connect 3 0 13 0;
 #X connect 3 0 13 1;
 #X connect 4 0 3 0;
@@ -124,3 +128,8 @@
 #X connect 27 0 3 0;
 #X connect 28 0 3 0;
 #X connect 29 0 3 0;
+#X connect 31 0 32 0;
+#X connect 32 0 33 0;
+#X connect 32 1 34 0;
+#X connect 33 0 30 0;
+#X connect 34 0 30 0;
