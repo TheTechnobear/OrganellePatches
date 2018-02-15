@@ -1,0 +1,53 @@
+{
+	"braids":	{
+		"module":	"brds",
+		"presets":	{
+			"Default":	{
+				"r_amt":	100,
+				"r_diff":	100,
+				"f_attack":	1,
+				"f_release":	50,
+				"f_sustain":	50,
+				"o_timbre":	70.312500,
+				"f_env_amt":	0,
+				"f_reson":	0,
+				"f_cutoff":	10000,
+				"e_decay":	500,
+				"r_cutoff":	100,
+				"f_decay":	500,
+				"e_attack":	1,
+				"e_release":	50,
+				"o_colour":	63.281250,
+				"e_sustain":	50,
+				"r_time":	100,
+				"o_transpose":	23,
+				"o_shape":	47
+			},
+			"NoReverb":	{
+				"r_amt":	0,
+				"r_diff":	0,
+				"f_attack":	1,
+				"f_release":	50,
+				"f_sustain":	50,
+				"o_timbre":	70.312500,
+				"f_env_amt":	0,
+				"f_reson":	0,
+				"f_cutoff":	10000,
+				"e_decay":	500,
+				"r_cutoff":	0,
+				"f_decay":	500,
+				"e_attack":	1,
+				"e_release":	50,
+				"o_colour":	63.281250,
+				"e_sustain":	50,
+				"r_time":	0,
+				"o_transpose":	23,
+				"o_shape":	32
+			}
+		},
+		"midi-mapping":	{
+			"cc":	{
+			}
+		}
+	}
+}

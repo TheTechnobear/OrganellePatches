@@ -53,7 +53,7 @@
 #X obj 560 260 loadbang;
 #X obj 550 339 t b b;
 #X msg 410 380 loadpreset Default;
-#X msg 560 380 loadsettings localhost:9000;
+#X msg 560 380 loadsettings reverb;
 #X connect 2 0 4 0;
 #X connect 3 0 4 1;
 #X connect 4 0 0 0;

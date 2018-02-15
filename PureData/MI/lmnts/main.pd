@@ -203,7 +203,7 @@
 #X obj 470 408 loadbang;
 #X obj 470 434 t b b;
 #X msg 356 482 loadpreset Default;
-#X msg 492 482 loadsettings localhost:9000;
+#X msg 492 482 loadsettings elements;
 #X connect 2 0 0 0;
 #X connect 2 1 1 0;
 #X connect 4 0 2 0;

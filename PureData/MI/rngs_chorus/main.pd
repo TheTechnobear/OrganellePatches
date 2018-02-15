@@ -46,7 +46,7 @@
 #X obj 506 199 loadbang;
 #X obj 506 230 t b b;
 #X msg 351 267 loadpreset Default;
-#X msg 506 261 loadsettings localhost:9000;
+#X msg 506 261 loadsettings chorus;
 #X connect 0 0 1 0;
 #X connect 0 1 2 0;
 #X connect 3 0 0 0;
