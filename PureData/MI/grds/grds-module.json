@@ -1,0 +1,23 @@
+{
+    "name" : "grds",
+    "display" : "Grids",
+    "parameters" :  [ 
+        ["int","g_tempo","Tempo",30,260,120],
+        ["pct","g_bass","Bass Density",0,100,25],
+        ["pct","g_snare","Snare Density",0,100,25],
+        ["pct","g_hihat","HiHat Density",0,100,25],
+        ["float","g_mapx","Map X",0,127,0],
+        ["float","g_mapy","Map Y",0,127,0],
+        ["float","g_chaos","Chaos",0,127,0],
+        ["pct","r_amount","Amount",0,100,50],
+        ["pct","r_time","Time",0,100,50],
+        ["pct","r_diff","Diffusion",0,100,50],
+        ["pct","r_cutoff","Cutoff",0,100,50]
+    ],
+    "pages" : [ 
+        ["pg_main","Main",["g_tempo","g_bass","g_snare","g_hihat"]],
+        ["pg_pattern","Pattern",["g_mapx","g_mapy","g_chaos"]],
+        ["pg_reverb","Reverb",["r_amount","r_time","r_diff","r_cutoff"]]
+    ]
+}
+

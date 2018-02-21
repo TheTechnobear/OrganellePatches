@@ -1,0 +1,24 @@
+{
+	"grids":	{
+		"module":	"grds",
+		"presets":	{
+			"Default":	{
+				"r_cutoff":	2.834800,
+				"g_hihat":	66.666672,
+				"g_mapy":	43.947212,
+				"g_bass":	25.219940,
+				"g_mapx":	20.732159,
+				"g_tempo":	120,
+				"g_snare":	32.258064,
+				"g_chaos":	14.028348,
+				"r_amount":	24.437927,
+				"r_time":	9.579667,
+				"r_diff":	79.374390
+			}
+		},
+		"midi-mapping":	{
+			"cc":	{
+			}
+		}
+	}
+}
