@@ -2,7 +2,7 @@
     "name" : "rngs",
     "display" : "Rings",
     "parameters" :  [ 
-        ["semis","rngs_trans","Transpose",-48,48,0],
+        ["pitch","rngs_trans","Transpose",-24,24,0],
         ["pct","rngs_struct","Structure",0,100,50],
         ["pct","rngs_bright","Brightness",0,100,50],
         ["pct","rngs_damp","Damping",0,100,50],

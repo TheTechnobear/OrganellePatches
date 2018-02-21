@@ -5,15 +5,15 @@
 #X obj 95 185 loadbang;
 #X obj 95 217 delay 100;
 #X obj 352 219 vsl 15 128 0 1 0 0 knob1 knob1 empty 0 -9 0 10 -262144
--1 -1 7200 1;
+-1 -1 0 1;
 #X obj 415 219 vsl 15 128 0 1 0 0 knob2 knob2 empty 0 -9 0 10 -262144
--1 -1 9000 1;
+-1 -1 0 1;
 #X obj 480 220 vsl 15 128 0 1 0 0 knob3 knob3 empty 0 -9 0 10 -262144
 -1 -1 0 1;
 #X obj 547 218 vsl 15 128 0 1 0 0 knob4 knob4 empty 0 -9 0 10 -262144
--1 -1 8200 1;
+-1 -1 0 1;
 #X obj 647 220 vsl 15 128 0 1 0 0 exp exp empty 0 -9 0 10 -262144 -1
--1 6800 1;
+-1 0 1;
 #X obj 330 469 tgl 15 0 aux aux empty 17 7 0 10 -262144 -1 -1 0 1;
 #X obj 648 366 tgl 15 0 fs fs empty 17 7 0 10 -262144 -1 -1 0 1;
 #N canvas 127 248 922 604 audioIO 0;
@@ -36,7 +36,7 @@
 run through a compressor to provide some headroom if things get too
 loud. Also sends values to the Organelle's OLED VU meter.;
 #X obj 742 360 vsl 15 128 0 1 0 0 empty empty empty 0 -9 0 10 -262144
--1 -1 10000 1;
+-1 -1 12700 1;
 #X obj 742 326 r vol;
 #X obj 485 134 *~ 0.25;
 #X obj 582 133 *~ 0.25;
@@ -224,8 +224,8 @@ MIDI;
 #X obj 382 471 tgl 15 0 key1 key1 empty 17 7 0 10 -262144 -1 -1 0 1
 ;
 #X text 327 442 aux;
-#X obj 731 219 vsl 15 128 0 1 0 0 vol vol empty 0 -9 0 10 -262144 -1
--1 10000 1;
+#X obj 731 219 vsl 15 128 0 1 0 1 vol vol empty 0 -9 0 10 -262144 -1
+-1 12700 1;
 #X obj 340 141 bng 15 250 50 0 send-all-vals empty empty 17 7 0 10
 -262144 -1 -1;
 #X obj 330 420 cnv 17 17 17 empty empty empty 20 12 0 14 -33289 -262144
