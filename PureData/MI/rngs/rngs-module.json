@@ -2,13 +2,23 @@
     "name" : "rngs",
     "display" : "Rings",
     "parameters" :  [ 
-        ["pitch","rngs_trans","Transpose",-24,24,0],
+        ["pitch","rngs_trans","Transpose",-48,48,0],
         ["pct","rngs_struct","Structure",0,100,50],
+        ["int","rngs_model","Model",0,5,0],
+        ["int","rngs_poly","Poly Mode",0,3,0],
+
         ["pct","rngs_bright","Brightness",0,100,50],
         ["pct","rngs_damp","Damping",0,100,50],
         ["pct","rngs_pos","Position",0,100,50],
-        ["bool","rngs_bypass","Bypass",0,1,0],
+        ["int","rngs_chord","Num Chords",0,10,0],
+
+        ["int","rngs_fm","FM",-48,48,0],
+        ["bool","rngs_i_strum","Int Strum",0,1,1],
+        ["bool","rngs_i_exciter","Int Exciter",0,1,1],
+        ["bool","rngs_i_note","Int Note",0,1,0],
+
         ["bool","rngs_easter","Easter Egg",0,1,0],
+        ["bool","rngs_bypass","Bypass",0,1,0],
 
         ["pct","clds_mix","Mix",0,100,50],
         ["bool","clds_freeze","Freeze",0,1,0],
@@ -31,8 +41,10 @@
         ["bool","clds_lofi","Lofi",0,1,0] 
     ],
     "pages" : [ 
-        ["pg_rngs_main","Rings",["rngs_trans","rngs_struct","rngs_bright","rngs_damp"]],
-        ["pg_rngs_extra","R.Extra",["rngs_pos","rngs_bypass","rngs_easter"]],
+        ["pg_rngs_1","Rings",["rngs_trans","rngs_struct","rngs_model","rngs_poly"]],
+        ["pg_rngs_2","R.Timbre",["rngs_bright","rngs_damp","rngs_pos","rngs_chord"]],
+        ["pg_rngs_3","R.Internal",["rngs_fm", "rngs_i_strum","rngs_i_exciter", "rngs_i_note"]],
+        ["pg_rngs_4","R.Extra",["rngs_bypass","rngs_easter"]],
         ["pg_clds_main","Clouds",["clds_mix","clds_freeze","clds_trig","clds_position"]],
         ["pg_clds_texture","C.Texture", ["clds_size","clds_pitch","clds_density","clds_texture"]],
         ["pg_clds_reverb","C.Reverb", ["clds_spread","clds_feedback","clds_reverb","clds_mode"]],
