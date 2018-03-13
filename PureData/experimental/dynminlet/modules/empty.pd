@@ -1,0 +1,13 @@
+#N canvas 854 714 778 367 10;
+#X obj 56 46 inlet~ left;
+#X obj 158 46 inlet~ right;
+#X obj 58 208 outlet~ left;
+#X obj 162 208 outlet~ right;
+#X obj 270 46 inlet notes;
+#X obj 272 208 outlet notes;
+#X obj 424 147 loadbang;
+#X obj 427 188 print module:empty into \$1;
+#X connect 0 0 2 0;
+#X connect 1 0 3 0;
+#X connect 4 0 5 0;
+#X connect 6 0 7 0;

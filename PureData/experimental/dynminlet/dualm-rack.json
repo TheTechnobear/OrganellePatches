@@ -1,0 +1,54 @@
+{
+	"rings":	{
+		"module":	"rngs",
+		"presets":	{
+			"Default":	{
+				"rngs_i_strum":	0,
+				"rngs_chord":	10,
+				"rngs_damp":	38.514172,
+				"rngs_i_note":	0,
+				"rngs_pos":	44.379276,
+				"rngs_trans":	-28,
+				"rngs_poly":	3,
+				"rngs_bright":	89.149559,
+				"rngs_struct":	23.851418,
+				"rngs_fm":	0,
+				"rngs_model":	1,
+				"rngs_easter":	0,
+				"rngs_i_exciter":	1,
+				"rngs_bypass":	0
+			}
+		},
+		"midi-mapping":	{
+			"cc":	{
+			}
+		}
+	},
+	"clouds":	{
+		"module":	"clds",
+		"presets":	{
+			"Default":	{
+				"clds_lofi":	0,
+				"clds_bypass":	0,
+				"clds_mode":	0,
+				"clds_position":	50,
+				"clds_density":	100,
+				"clds_mono":	0,
+				"clds_freeze":	0,
+				"clds_silence":	0,
+				"clds_reverb":	61.192574,
+				"clds_trig":	0,
+				"clds_size":	49.071358,
+				"clds_texture":	87.390030,
+				"clds_mix":	82.013687,
+				"clds_pitch":	0,
+				"clds_spread":	67.448685,
+				"clds_feedback":	33.431087
+			}
+		},
+		"midi-mapping":	{
+			"cc":	{
+			}
+		}
+	}
+}

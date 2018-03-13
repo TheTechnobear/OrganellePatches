@@ -8,7 +8,7 @@
 #X obj 354 85 sel 60;
 #X obj 323 115 spigot 0;
 #X obj 474 229 spigot 0;
-#N canvas 448 226 1338 779 rack 1;
+#N canvas 448 226 1338 779 rack 0;
 #X obj 234 137 r knob1Raw;
 #X msg 234 173 knob1Raw \$1;
 #X obj 316 136 r knob2Raw;
