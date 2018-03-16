@@ -22,9 +22,7 @@
 #X msg 775 195 midiCC \$2 \$1;
 #X obj 168 327 KontrolRack 8000 9000;
 #X obj 44 29 loadbang;
-#X obj 44 59 t b b;
 #X msg 44 87 loadpreset Default;
-#X msg 184 87 loadsettings dualm;
 #X obj 897 164 routeOSC /key;
 #X obj 897 134 r oscIn;
 #X msg 897 194 key \$1 \$2;
@@ -34,9 +32,26 @@
 #X obj 584 472 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
 #X msg 584 511 loadmodule m1 modules/clds;
-#X obj 768 472 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#X obj 352 665 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X msg 768 511 loadmodule m4 modules/empty;
+#X msg 184 87 loadsettings dynm;
+#X obj 563 665 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 760 665 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X msg 760 704 loadmodule m4 modules/empty;
+#X msg 352 704 loadmodule m2 modules/empty;
+#X msg 563 704 loadmodule m3 modules/empty;
+#X msg 13 231 savesettings dynm;
+#X msg 12 198 updatepreset Default;
+#X obj 349 595 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X msg 349 634 loadmodule m2 modules/clds;
+#X obj 44 59 t b b b;
+#X obj 332 87 s rackloaded;
+#X obj 563 594 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X msg 563 633 loadmodule m3 modules/rngs;
 #X connect 0 0 1 0;
 #X connect 1 0 15 0;
 #X connect 2 0 7 0;
@@ -53,20 +68,31 @@
 #X connect 12 1 13 1;
 #X connect 13 0 14 0;
 #X connect 14 0 15 0;
-#X connect 16 0 17 0;
-#X connect 17 0 18 0;
-#X connect 17 1 19 0;
-#X connect 18 0 15 0;
-#X connect 19 0 15 0;
-#X connect 20 0 22 0;
-#X connect 21 0 20 0;
+#X connect 16 0 36 0;
+#X connect 17 0 15 0;
+#X connect 18 0 20 0;
+#X connect 19 0 18 0;
+#X connect 20 0 15 0;
+#X connect 21 0 22 0;
 #X connect 22 0 15 0;
 #X connect 23 0 24 0;
 #X connect 24 0 15 0;
-#X connect 25 0 26 0;
+#X connect 25 0 30 0;
 #X connect 26 0 15 0;
-#X connect 27 0 28 0;
-#X connect 28 0 15 0;
+#X connect 27 0 31 0;
+#X connect 28 0 29 0;
+#X connect 29 0 15 0;
+#X connect 30 0 15 0;
+#X connect 31 0 15 0;
+#X connect 32 0 15 0;
+#X connect 33 0 15 0;
+#X connect 34 0 35 0;
+#X connect 35 0 15 0;
+#X connect 36 0 17 0;
+#X connect 36 1 26 0;
+#X connect 36 2 37 0;
+#X connect 38 0 39 0;
+#X connect 39 0 15 0;
 #X restore 50 9 pd rack;
 #X obj 378 696 noteout 1;
 #X obj 378 656 unpack 0 0;
@@ -103,23 +129,23 @@ still keep the modules as s/r and use throw/catch in routing matrix
 #X text 196 51 Simplistic linear routing - for now, f 43;
 #N canvas 1691 614 794 264 m1 0;
 #X obj 100 100 modules/rngs/module m1;
-#X obj 400 0 loadbang;
+#X obj 400 0 r rackloaded;
 #X msg 400 50 modules/rngs/rngs-module.json;
 #X obj 400 100 send loaddefs-m1;
 #X connect 1 0 2 0;
 #X connect 2 0 3 0;
 #X restore 51 79 pd m1;
 #N canvas 1285 549 450 300 m2 0;
-#X obj 100 100 modules/empty/module m2;
-#X obj 400 0 loadbang;
-#X msg 400 50 modules/empty/empty-module.json;
+#X obj 100 100 modules/clds/module m2;
+#X obj 400 0 r rackloaded;
+#X msg 400 50 modules/clds/clds-module.json;
 #X obj 400 100 send loaddefs-m2;
 #X connect 1 0 2 0;
 #X connect 2 0 3 0;
 #X restore 51 109 pd m2;
 #N canvas 1285 549 450 300 m3 0;
 #X obj 100 100 modules/empty/module m3;
-#X obj 400 0 loadbang;
+#X obj 400 0 r rackloaded;
 #X msg 400 50 modules/empty/empty-module.json;
 #X obj 400 100 send loaddefs-m3;
 #X connect 1 0 2 0;
@@ -127,7 +153,7 @@ still keep the modules as s/r and use throw/catch in routing matrix
 #X restore 51 139 pd m3;
 #N canvas 1285 549 450 300 m4 0;
 #X obj 100 100 modules/empty/module m4;
-#X obj 400 0 loadbang;
+#X obj 400 0 r rackloaded;
 #X msg 400 50 modules/empty/empty-module.json;
 #X obj 400 100 send loaddefs-m4;
 #X connect 1 0 2 0;
