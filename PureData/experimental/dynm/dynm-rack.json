@@ -1,23 +1,18 @@
 {
 	"presets":	{
 		"Default":	{
-			"m1":	{
-				"moduleType":	"rngs",
+			"m3":	{
+				"moduleType":	"empty",
 				"params":	{
-					"rngs_bypass":	0,
-					"rngs_i_note":	0,
-					"rngs_i_strum":	0,
-					"rngs_pos":	50,
-					"rngs_i_exciter":	0,
-					"rngs_damp":	50,
-					"rngs_chord":	0,
-					"rngs_poly":	0,
-					"rngs_bright":	50,
-					"rngs_fm":	0,
-					"rngs_easter":	0,
-					"rngs_model":	0,
-					"rngs_struct":	50,
-					"rngs_trans":	0
+				},
+				"midi-mapping":	{
+					"cc":	{
+					}
+				}
+			},
+			"m2":	{
+				"moduleType":	"empty",
+				"params":	{
 				},
 				"midi-mapping":	{
 					"cc":	{
@@ -33,34 +28,24 @@
 					}
 				}
 			},
-			"m3":	{
-				"moduleType":	"empty",
+			"m1":	{
+				"moduleType":	"brds",
 				"params":	{
-				},
-				"midi-mapping":	{
-					"cc":	{
-					}
-				}
-			},
-			"m2":	{
-				"moduleType":	"clds",
-				"params":	{
-					"clds_silence":	0,
-					"clds_bypass":	0,
-					"clds_mono":	0,
-					"clds_mode":	0,
-					"clds_reverb":	50,
-					"clds_feedback":	0,
-					"clds_density":	50,
-					"clds_mix":	90.625000,
-					"clds_trig":	0,
-					"clds_spread":	50,
-					"clds_pitch":	0,
-					"clds_size":	50,
-					"clds_texture":	50,
-					"clds_freeze":	0,
-					"clds_lofi":	0,
-					"clds_position":	50
+					"f_attack":	1,
+					"f_release":	50,
+					"f_sustain":	50,
+					"o_timbre":	50,
+					"f_env_amt":	0,
+					"f_reson":	0,
+					"f_cutoff":	10000,
+					"e_decay":	500,
+					"f_decay":	500,
+					"e_attack":	1,
+					"e_release":	50,
+					"o_colour":	50,
+					"e_sustain":	50,
+					"o_transpose":	0,
+					"o_shape":	0
 				},
 				"midi-mapping":	{
 					"cc":	{

@@ -1,10 +1,10 @@
-#N canvas 429 295 1052 834 10;
+#N canvas 429 291 1052 834 10;
 #X obj 199 696 throw~ outL;
 #X obj 289 696 throw~ outR;
 #X obj 198 87 r~ inL;
 #X obj 289 87 r~ inR;
 #X obj 378 87 r notes;
-#N canvas 641 408 1338 779 rack 1;
+#N canvas 302 457 1338 779 rack 1;
 #X obj 234 137 r knob1Raw;
 #X msg 234 173 knob1Raw \$1;
 #X obj 316 136 r knob2Raw;
@@ -52,6 +52,9 @@
 #X obj 563 594 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
 #X msg 563 633 loadmodule m3 modules/rngs;
+#X obj 764 474 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X msg 764 513 loadmodule m1 modules/brds;
 #X connect 0 0 1 0;
 #X connect 1 0 15 0;
 #X connect 2 0 7 0;
@@ -93,12 +96,14 @@
 #X connect 36 2 37 0;
 #X connect 38 0 39 0;
 #X connect 39 0 15 0;
+#X connect 40 0 41 0;
+#X connect 41 0 15 0;
 #X restore 50 9 pd rack;
 #X obj 378 696 noteout 1;
 #X obj 378 656 unpack 0 0;
 #X obj 198 190 s~ inL-m1;
 #X obj 289 190 s~ inR-m1;
-#X obj 289 218 r~ outR-m1;
+#X obj 289 223 r~ outR-m1;
 #X obj 198 218 r~ outL-m1;
 #X obj 378 218 r notesOut-m1;
 #X obj 378 190 s notesIn-m1;
@@ -127,18 +132,18 @@ still keep the modules as s/r and use throw/catch in routing matrix
 - TBA;
 #X text 194 11 modular rack v1;
 #X text 196 51 Simplistic linear routing - for now, f 43;
-#N canvas 1691 614 794 264 m1 0;
-#X obj 100 100 modules/rngs/module m1;
+#N canvas 1499 610 794 264 m1 1;
+#X obj 100 100 modules/brds/module m1;
 #X obj 400 0 r rackloaded;
-#X msg 400 50 modules/rngs/rngs-module.json;
+#X msg 400 50 modules/brds/brds-module.json;
 #X obj 400 100 send loaddefs-m1;
 #X connect 1 0 2 0;
 #X connect 2 0 3 0;
 #X restore 51 79 pd m1;
 #N canvas 1285 549 450 300 m2 0;
-#X obj 100 100 modules/clds/module m2;
+#X obj 100 100 modules/empty/module m2;
 #X obj 400 0 r rackloaded;
-#X msg 400 50 modules/clds/clds-module.json;
+#X msg 400 50 modules/empty/empty-module.json;
 #X obj 400 100 send loaddefs-m2;
 #X connect 1 0 2 0;
 #X connect 2 0 3 0;
