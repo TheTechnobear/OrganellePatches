@@ -46,7 +46,6 @@
 #X obj 802 396 r f_reson-\$1;
 #X obj 686 397 r f_cutoff-\$1;
 #X obj 138 208 r o_timbre-\$1;
-#X obj 975 495 print voice;
 #X connect 0 0 9 0;
 #X connect 1 0 0 0;
 #X connect 2 1 4 0;
@@ -59,7 +58,6 @@
 #X connect 7 0 17 1;
 #X connect 8 0 2 0;
 #X connect 8 0 28 0;
-#X connect 8 0 47 0;
 #X connect 10 0 19 0;
 #X connect 11 0 1 0;
 #X connect 12 0 11 0;
