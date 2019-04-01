@@ -10,13 +10,8 @@ export USER_DIR=${USER_DIR:="/usbdrive"}
 
 echo installing pd49 > $USER_DIR/install.log
 
-oscsend localhost 4001 /oled/aux/line/2 s "installing"
-oscsend localhost 4001 /oled/aux/line/3 s "PureData 0.49"
+oscsend localhost 4001 /oled/aux/line/2 s "PureData 0.49"
 pacman -U --noconfirm pkgs/*  2>&1 >> $USER_DIR/install.log 
-
-oscsend localhost 4001 /oled/aux/line/2 s "installation"
-oscsend localhost 4001 /oled/aux/line/3 s "complete"
-
 
 echo install done  >>$USER_DIR/install.log
 
