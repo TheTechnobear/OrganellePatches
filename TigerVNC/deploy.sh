@@ -17,6 +17,7 @@ oscsend localhost 4001 /oled/aux/line/2 s "configure"
 rm -rf /root/.vnc
 mv vnc /root/.vnc
 rm -rf ${SYSTEM_DIR}/TigerVNC
+mkdir ${SYSTEM_DIR}
 mv TigerVNC ${SYSTEM_DIR}/TigerVNC
 oscsend localhost 4001 /oled/aux/line/2 s "done"
 
