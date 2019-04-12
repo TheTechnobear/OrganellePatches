@@ -13,6 +13,12 @@ echo installing pd49 > $USER_DIR/install.log
 oscsend localhost 4001 /oled/aux/line/2 s "PureData 0.49"
 pacman -U --noconfirm pkgs/*  2>&1 >> $USER_DIR/install.log 
 
+mkdir -p /root/.config/Pd/org.puredata.pd.pd-gui
+
+cp -n docspath.conf /root/.config/Pd/org.puredata.pd.pd-gui/docspath.conf
+rm /usr/lib/pd/bin/pd
+ln  -s /usr/bin/pd  /usr/lib/pd/bin/pd
+
 echo install done  >>$USER_DIR/install.log
 
 cd ..
