@@ -25,6 +25,7 @@ else
 	oscsend localhost 4001 /oled/aux/line/2 s "configure"
 	rm -rf /root/.vnc
 	mv vnc.1 /root/.vnc
+	chmod 600 /root/.vnc/passwd
 	sync
 	~/scripts/remount-ro.sh
 fi
