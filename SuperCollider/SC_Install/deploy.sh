@@ -6,6 +6,16 @@ export USER_DIR=${USER_DIR:="/usbdrive"}
 # SCRIPTS_DIR=$FW_DIR/scripts
 
 # should be run from motherhost package installer
+grep -q 'ID=archarm' /etc/os-release; 
+if [ ! $? -eq 0 ] 
+then 
+   oscsend localhost 4001 /oled/aux/line/1 s "only valid for"
+   oscsend localhost 4001 /oled/aux/line/2 s "organelle-1"
+   cd ..
+   rm -rf $1
+   exit 128
+fi
+
 ~/scripts/remount-rw.sh
 
 echo installing sc > $USER_DIR/sc_install.log
