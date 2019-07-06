@@ -12,7 +12,7 @@ if [ ! $? -eq 0 ]
 then 
    oscsend localhost 4001 /oled/aux/line/1 s "only valid for"
    oscsend localhost 4001 /oled/aux/line/2 s "organelle-1"
-   exit -1
+   exit 128
 fi
 
 
