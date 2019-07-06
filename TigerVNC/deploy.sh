@@ -6,6 +6,16 @@ export USER_DIR=${USER_DIR:="/usbdrive"}
 # SCRIPTS_DIR=$FW_DIR/scripts
 SYSTEM_DIR=$USER_DIR/System
 
+
+grep -q 'ID=archarm' /etc/os-release; 
+if [ ! $? -eq 0 ] 
+then 
+   oscsend localhost 4001 /oled/aux/line/1 s "only valid for"
+   oscsend localhost 4001 /oled/aux/line/2 s "organelle-1"
+   exit -1
+fi
+
+
 # should be run from motherhost package installer
 ~/scripts/remount-rw.sh
 
